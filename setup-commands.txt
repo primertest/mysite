@@ -1,0 +1,13 @@
+git config --global user.email "<your githib account email address>"
+git config --global user.name "<your github username>"
+mkdir -p src
+cd src
+git clone <url of the repo you wish to clone>
+cd <name of repo you clone>
+rm -rf .git
+git init
+git remote add origin <the repo you are saving it to>https://github.com/primertest/basic.git
+echo "first commit" >> README.md
+git add --all
+git commit -m 'Initial commit'
+git push -f origin master

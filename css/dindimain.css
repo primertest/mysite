@@ -1,0 +1,11 @@
+---
+
+---
+{% include vendor/bootstrap/css/bootstrap.min.css%}
+{% include vendor/font-awesome/css/font-awesome.min.css%}
+{% include vendor/magnific-popup/magnific-popup.css %}
+{% include css/creative.css %}
+{% include css/photoform.css %}
+{% include css/footerclean.min.css %}
+{% include css/footerdark.min.css %}
+

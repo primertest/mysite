@@ -1,0 +1,8 @@
+# Google analytics Trackin Code
+ga-tracking: UA-XXXXXX-X
+
+# -----------
+# CloudCannon
+_editable_regions:
+  image:
+    url_src: true

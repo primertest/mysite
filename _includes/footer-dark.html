@@ -1,0 +1,36 @@
+
+<!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"> -->
+<div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-push-6 item text">
+                        <h3>{{ site.data.footerdark.company-name }}</h3>
+                        <p>{{ site.data.footerdark.company-blurb }}</p>
+                    </div>
+                    <div class="col-md-3 col-md-pull-6 col-sm-4 item text">
+                        <h3>{{ site.data.footerdark.links1-name }}</h3>
+                        <ul>
+                            {% for link in site.data.footerdark.links1-links %}
+                            <li><a href="{{ link.link }}">{{ link.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-md-pull-6 col-sm-4 item text">
+                        <h3>{{ site.data.footerdark.links2-name }}</h3>
+                        <ul>
+                            {% for link in site.data.footerdark.links2-links %}
+                            <li><a href="{{ link.link }}">{{ link.name }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="col-md-12 col-sm-4 item social">
+                      {% for account in site.data.theme.socialmedia %}    
+                        <a href="{{ account.link }}"><i class="icon ion-social-{{ account.name }}"></i></a>
+                      {% endfor %}
+                    </div>
+                </div>
+                <p class="copyright">Company Name © 2016</p>
+            </div>
+        </footer>
+    </div>

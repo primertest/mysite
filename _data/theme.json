@@ -1,0 +1,28 @@
+{
+	"brand": "Start Growing",
+	"brand-image": "/images/logo.jpg",
+	"brand-position": "left",
+	"formhandler": "https://script.google.com/macros/s/AKfycbyjHf_4K6opEkeA8aXCfZubCC1yUTHahpG3G1w6OfXYoL7GP9qL/exec?data=",
+	"socialmedia": [
+		{
+			"name": "googleplus",
+			"link": "https://plus.google.com"
+		},
+		{
+			"name": "snapchat",
+			"link": "https://snapchat.com"
+		},
+		{
+			"name": "twitter",
+			"link": "https://twitter.com"
+		},
+		{
+			"name": "instagram",
+			"link": "https://instagram.com"
+		},
+		{
+			"name": "facebook",
+			"link": "https://facebook.com"
+		}
+	]
+}

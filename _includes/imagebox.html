@@ -1,0 +1,15 @@
+    <section class="bg-primary" id="photo-viewer">
+    <div id="show" style="width: 640px; margin: 0 auto;"></div>
+    </section>
+    <div id="thumbs" style="position: relative; width: 80%; margin: 0 auto;">
+    {% for image in page.images %}
+    <a {% if forloop.first or forloop.last %} id="first-thumb" {% endif %}href="{{ image.image }}" onclick="showit(this);return false;">
+    <img src="{{ image.image | replace: "s640","s150"  }}"/>
+    </a>
+    {% endfor %}
+    </div>
+    <script>function showit(link){document.getElementById("show").innerHTML = "<img src='"+link.href+"'  style='vertical-align: middle;'/>";}
+        
+        var thefirstimage = document.getElementById("first-thumb").href
+        document.getElementById("show").innerHTML = "<img src='"+thefirstimage+"'/>";
+    </script>
